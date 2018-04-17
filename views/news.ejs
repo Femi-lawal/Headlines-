@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<title> Headlines </title>
+
+<!-- 	<link href="css/bootstrap.min.css" rel="stylesheet">-->	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/news.css">
+
+</head>
+<body>
+	  <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="/Headlines.png" alt="animated image of a newspaper">
+        <h1 class="header__title">
+          HEADLINES
+        </h1>
+      </div>
+    </header>
+<form>
+  <input type="text" name="search" id="search" onkeyup= "search()"placeholder="Search here">
+  <input type="submit" name="submit" class="submit" value="search">
+  <br>
+</form>
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">News</a></li>
+        <li class="nav__item"><a href="#">Events</a></li>
+        <li class="nav__item"><a href="#">Culture</a></li>
+        <li class="nav__item"><a href="about">About</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="content">
+        <section class="hero">
+          <article class="description">
+            <h2 class="text-center">Breaking news!</h2>
+         </article>
+        </section>
+
+        <section class="top-news">
+<!--This is the koko*-->
+          	<div class="container">
+		<div class="row">
+			<div class="col-xs-9 col-xs-offset-1">
+				<h3 class="text-center"> Top news from Sources around the world</h3>
+			</div>
+		</div>
+	</div>
+ <div id="tab_section">
+            <select  style="background-color: white; color: black; border-width: 0; outline: 0" >
+              <option>Select Source</option><option value="ABC News">ABC News</option><option value="ABC News (AU)">ABC News (AU)</option><option value="Aftenposten">Aftenposten</option><option value="Al Jazeera English">Al Jazeera English</option><option value="ANSA.it">ANSA.it</option><option value="Argaam">Argaam</option><option value="Ars Technica">Ars Technica</option><option value="Ary News">Ary News</option><option value="Associated Press">Associated Press</option><option value="Australian Financial Review">Australian Financial Review</option><option value="Axios">Axios</option><option value="BBC News">BBC News</option><option value="BBC Sport">BBC Sport</option><option value="Bild">Bild</option><option value="Blasting News (BR)">Blasting News (BR)</option><option value="Bleacher Report">Bleacher Report</option><option value="Bloomberg">Bloomberg</option><option value="Breitbart News">Breitbart News</option><option value="Business Insider">Business Insider</option><option value="Business Insider (UK)">Business Insider (UK)</option><option value="Buzzfeed">Buzzfeed</option><option value="CBC News">CBC News</option><option value="CBS News">CBS News</option><option value="CNBC">CNBC</option><option value="CNN">CNN</option><option value="CNN Spanish">CNN Spanish</option><option value="Crypto Coins News">Crypto Coins News</option><option value="Daily Mail">Daily Mail</option><option value="Der Tagesspiegel">Der Tagesspiegel</option><option value="Die Zeit">Die Zeit</option><option value="El Mundo">El Mundo</option><option value="Engadget">Engadget</option><option value="Entertainment Weekly">Entertainment Weekly</option><option value="ESPN">ESPN</option><option value="ESPN Cric Info">ESPN Cric Info</option><option value="Financial Post">Financial Post</option><option value="Financial Times">Financial Times</option><option value="Focus">Focus</option><option value="Football Italia">Football Italia</option><option value="Fortune">Fortune</option><option value="FourFourTwo">FourFourTwo</option><option value="Fox News">Fox News</option><option value="Fox Sports">Fox Sports</option><option value="Globo">Globo</option><option value="Google News">Google News</option><option value="Google News (Argentina)">Google News (Argentina)</option><option value="Google News (Australia)">Google News (Australia)</option><option value="Google News (Brasil)">Google News (Brasil)</option><option value="Google News (Canada)">Google News (Canada)</option><option value="Google News (France)">Google News (France)</option><option value="Google News (India)">Google News (India)</option><option value="Google News (Israel)">Google News (Israel)</option><option value="Google News (Italy)">Google News (Italy)</option><option value="Google News (Russia)">Google News (Russia)</option><option value="Google News (Saudi Arabia)">Google News (Saudi Arabia)</option><option value="Google News (UK)">Google News (UK)</option><option value="Göteborgs-Posten">Göteborgs-Posten</option><option value="Gruenderszene">Gruenderszene</option><option value="Hacker News">Hacker News</option><option value="Handelsblatt">Handelsblatt</option><option value="IGN">IGN</option><option value="Il Sole 24 Ore">Il Sole 24 Ore</option><option value="Independent">Independent</option><option value="Infobae">Infobae</option><option value="InfoMoney">InfoMoney</option><option value="La Gaceta">La Gaceta</option><option value="La Nacion">La Nacion</option><option value="La Repubblica">La Repubblica</option><option value="Le Monde">Le Monde</option><option value="Lenta">Lenta</option><option value="L'equipe">L'equipe</option><option value="Les Echos">Les Echos</option><option value="Libération">Libération</option><option value="Marca">Marca</option><option value="Mashable">Mashable</option><option value="Medical News Today">Medical News Today</option><option value="Metro">Metro</option><option value="Mirror">Mirror</option><option value="MSNBC">MSNBC</option><option value="MTV News">MTV News</option><option value="MTV News (UK)">MTV News (UK)</option><option value="National Geographic">National Geographic</option><option value="NBC News">NBC News</option><option value="News24">News24</option><option value="New Scientist">New Scientist</option><option value="News.com.au">News.com.au</option><option value="Newsweek">Newsweek</option><option value="New York Magazine">New York Magazine</option><option value="Next Big Future">Next Big Future</option><option value="NFL News">NFL News</option><option value="NHL News">NHL News</option><option value="NRK">NRK</option><option value="Politico">Politico</option><option value="Polygon">Polygon</option><option value="RBC">RBC</option><option value="Recode">Recode</option><option value="Reddit /r/all">Reddit /r/all</option><option value="Reuters">Reuters</option><option value="RT">RT</option><option value="RTE">RTE</option><option value="RTL Nieuws">RTL Nieuws</option><option value="SABQ">SABQ</option><option value="Spiegel Online">Spiegel Online</option><option value="Svenska Dagbladet">Svenska Dagbladet</option><option value="T3n">T3n</option><option value="TalkSport">TalkSport</option><option value="TechCrunch">TechCrunch</option><option value="TechCrunch (CN)">TechCrunch (CN)</option><option value="TechRadar">TechRadar</option><option value="The Economist">The Economist</option><option value="The Globe And Mail">The Globe And Mail</option><option value="The Guardian (AU)">The Guardian (AU)</option><option value="The Guardian (UK)">The Guardian (UK)</option><option value="The Hill">The Hill</option><option value="The Hindu">The Hindu</option><option value="The Huffington Post">The Huffington Post</option><option value="The Irish Times">The Irish Times</option><option value="The Lad Bible">The Lad Bible</option><option value="The New York Times">The New York Times</option><option value="The Next Web">The Next Web</option><option value="The Sport Bible">The Sport Bible</option><option value="The Telegraph">The Telegraph</option><option value="The Times of India">The Times of India</option><option value="The Verge">The Verge</option><option value="The Wall Street Journal">The Wall Street Journal</option><option value="The Washington Post">The Washington Post</option><option value="Time">Time</option><option value="USA Today">USA Today</option><option value="Vice News">Vice News</option><option value="Wired">Wired</option><option value="Wired.de">Wired.de</option><option value="Wirtschafts Woche">Wirtschafts Woche</option><option value="Xinhua Net">Xinhua Net</option><option value="Ynet">Ynet</option>
+            </select>
+
+	<hr>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 spacing">
+				<div class="printResultsS">
+<!-- koko ends-->				
+        </section>
+
+      
+        <section class="news recent-news">
+<!--This is the koko*-->
+<hr>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-9 col-xs-offset-1">
+				<h3 class="text-center"> News about Countries </h3>
+			</div>
+		</div>
+	</div>
+ <div id="tab_section">
+            <select style="background-color: white; color: black; border-width: 0; outline: 0" >
+                <option>Select Country</option>
+                <option value="ar">Argentina</option>
+                <option value="at">Austria</option>
+                <option value="au">Australia</option>
+                <option value="be">Belgium</option>
+                <option value="bg">Bulgaria</option>
+                <option value="br">Brazil</option>
+                <option value="ca">Canada</option>
+                <option value="cn">China</option>
+                <option value="co">Colombia</option>
+                <option value="cu">Cuba</option>
+                <option value="cz">Czech Republic</option>
+                <option value="de">Germany</option>
+                <option value="eg">Egypt</option>
+                <option value="fr">France</option>
+                <option value="gr">Greece</option>
+                <option value="hk">Hong Kong</option>
+                <option value="hu">Hungary</option>
+                <option value="id">Indonesia</option>
+                <option value="ie">Ireland</option>
+                <option value="il">Israel</option>
+                <option value="in">India</option>
+                <option value="it">Italy</option>
+                <option value="jp">Japan</option>
+                <option value="kr">Korea</option>
+                <option value="lt">Lithuania</option>
+                <option value="lv">Latvia</option>
+                <option value="ma">Morocco</option>
+                <option value="mx">Mexico</option>
+                <option value="my">Malaysia</option>
+                <option value="ng">Nigeria</option>
+                <option value="nl">Netherlands</option>
+                <option value="no">Norway</option>
+                <option value="nz">New Zealand  </option>
+                <option value="ph">Philippines</option>
+                <option value="pl">Poland</option>
+                <option value="pt">Portugal</option>
+                <option value="ro">Romania</option>
+                <option value="rs">Serbia</option>
+                <option value="ru">Russia</option>
+                <option value="sa">Saudi Arabia</option>
+                <option value="sg">Singapore</option>
+                <option value="sk">Slovakia</option>
+                <option value="si">Slovenia</option>
+                <option value="za">South Africa</option>
+                <option value="se">Sweden</option>
+                <option value="ch">Switzerland</option>
+                <option value="tw">Taiwan</option>
+                <option value="th">Thailand</option>
+                <option value="tr">Turkey</option>
+                <option value="ua">Ukraine</option>
+                <option value="ae">United Arab Emirates</option>
+                <option value="gb">United Kingdom</option>
+                <option value="us">United States</option>
+                <option value="ve">Venezuela</option>
+            </select>
+	<hr> 
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 spacing">
+				<div class="printResults">
+					<hr>
+<!-- koko ends-->				
+				</div>			
+			</div>		
+		</div>
+	</div>
+          <ul>
+            <li class="snippet">
+            </li>
+         </ul>
+        </section>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">#Take a climb challenge</a></li>
+        </ul>
+      </footer>
+    </main>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="/js/news.js"></script>
+	<script src="/js/sources.js"></script>
+  <script src="/js/main/indexController.js"></script>
+  <script src="/idb.js"></script>
+
+</body>
+</html>

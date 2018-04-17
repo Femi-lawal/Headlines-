@@ -1,0 +1,24 @@
+{
+  "name": "headlines",
+  "version": "1.0.0",
+  "description": "Modern RSS Feed",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Femi Lawal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "idb": "^2.1.1",
+    "idb-promise": "0.0.3",
+    "newsapi": "^2.2.2",
+    "nodemon": "^1.17.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {}
+}
